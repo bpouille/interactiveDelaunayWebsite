@@ -1687,6 +1687,7 @@
 
 	h3 {
 		font-size: 1.35em;
+		text-decoration: underline;
 	}
 
 	#one h3 {
@@ -2571,7 +2572,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #5a5a5a;
+		background-color: #f94262;
 		border-radius: 0;
 		border: 0;
 		color: #ffffff !important;
@@ -2584,6 +2585,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		width: 100%.
 	}
 
 		input[type="submit"]:hover,
@@ -2683,8 +2685,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #f94262;
 			color: #ffffff !important;
+			width: 100%;
 		}
 
 			input[type="submit"].special:hover,
