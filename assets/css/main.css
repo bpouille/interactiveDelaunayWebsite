@@ -19,6 +19,12 @@
 		vertical-align: baseline;
 	}
 
+	nav {
+		position:fixed;
+		right:0;
+		margin-right: 8em;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1585,8 +1591,8 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #9a9a9a;
-		font-family: "Raleway", Arial, Helvetica, sans-serif;
+		color: #5d5d5d;
+		font-family: "Roboto", Arial, Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1655,8 +1661,9 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #5385c1;
+		color: #f94262;
 		font-weight: 300;
+		
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 	}
@@ -1666,13 +1673,24 @@
 			text-decoration: none;
 		}
 
+	h1 {
+		font-family: "Raleway";
+	}
+
 	h2 {
-		font-size: 1.75em;
+		font-size: 6.75em;
 		font-weight: 600;
+		font-family: "Raleway";
+		position: relative;
+		margin-left: -1em;
 	}
 
 	h3 {
 		font-size: 1.35em;
+	}
+
+	#one h3 {
+		font-size:3.35em;
 	}
 
 	h4 {
@@ -1792,8 +1810,10 @@
 		}
 
 			section.wrapper header h2, article.wrapper header h2 {
-				font-size: 2.75em;
+				font-size: 6.5em;
 				margin: 0 0 .5em 0;
+				position: relative;
+				margin-left: -1em;
 			}
 
 			section.wrapper header p, article.wrapper header p {
@@ -1805,8 +1825,11 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #5385c1;
+			background: -moz-linear-gradient(left, #0f3051 0%, #258dc8 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, #0f3051 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, #0f3051 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			color: #bacee6;
+			background: linear-gradient(145deg , #fb4262 0%,#552c72 100%)
 		}
 
 			section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
@@ -2768,7 +2791,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #fb4262 ;
 			}
 
 			#header a:last-child {
@@ -2933,29 +2956,32 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
+		padding: 16em 0 10em 0;
+		background-image: url(http://artshi.ru/uploads/posts/2012-11/1353833825_delaunay-005.jpg);
+		background-color: red;
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
+		height: 80vh;
 	}
 
 		#banner h1 {
-			font-size: 3.5em;
+			font-size: 9.5em;
 			font-weight: 100;
 			color: #fff;
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0.2em 0;
 			padding: 0;
 		}
 
 		#banner p {
-			font-size: 1em;
+			font-size: 3em;
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
+			max-width: 20em;
+			margin: 0 auto;
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -3064,4 +3090,18 @@
 			text-align: center;
 		}
 
+	
+
+
+
 	}
+
+		.video__wrapper {
+			width:100%;
+		}
+
+		iframe {
+			display: flex;
+			position:relative;
+			margin:0 auto;
+		}
