@@ -20,11 +20,11 @@
 			<header id="header">
 				<div class="inner">
 					<nav id="nav">
-						<a href="#banner">Home</a>
-						<a href="#first">Discover</a>
-						<a href="#one">The concept</a>
-						<a href="#two">Schematics</a>
-						<a href="#four">Team</a>
+						<a class="js-scrollTo" href="#banner">Home</a>
+						<a class="js-scrollTo" href="#first">Discover</a>
+						<a class="js-scrollTo" href="#one">Concept</a>
+						<a class="js-scrollTo" href="#two">How does it work?</a>
+						<a class="js-scrollTo" href="#four">Team</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -55,7 +55,7 @@
 			<section id="one" class="wrapper">
 				<div class="inner">
 					<header>
-						<h2>The concept</h2>
+						<h2>Concept</h2>
 					</header>
 					<div class="flex flex-3">
 					
@@ -63,19 +63,21 @@
 							<header>
 								<h3>Discovering<br /></h3>
 							</header>
-							<p>First we wanted to give a new breath to abstract french painter's Robert & Sonia Delaunay.<br /> <br />Giving an idea of what they could have done with nowadays tools such as the Leap Motion.</p>						
+							<p>It all started with the idea of revisiting the work of the french artists Robert and Sonia Delaunay.<br /> <br />We wanted to use nowdays tools to imagine what could have been their work if they had lived in our digital age. With new techonoligies, they could have added interactivity, music, reshaped forms in time, played with colors ... and create a brand new world.</p>						
 						</article>
 						<article>
 							<header>
 								<h3>Creating</h3>
 							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>					
+							<p>In our installation, the spectator becomes a creator. He is able, with his gestures, to move shapes, to change the colors, the music tempo, to add elements such as music notes or new shapes...<br /> <br />Interacting with our creation gives one the freedom to create a unique piece of art using the elements at his disposal.</p>					
 						</article>
 						<article>
 							<header>
 								<h3>Learning</h3>
 							</header>
-							<p>We hope to give to the audience curiosity with tools that they don't necesseraly know and be part of the creation of Delaunay's.</p>
+							<p>Learning the gestures and what they launch can be  challenge for the spectator ! 
+
+							<br /><br />With this installation, we hope to make the audience curious about tools that they don't know and make them be a part of the creations of the Delaunays.</p>
 						</article>
 					</div>
 				</div>
@@ -85,8 +87,25 @@
 		<section id="two" class="wrapper style1">
 			<div class="inner">
 					<header>
-						<h2>Schematics</h2>
+						<h2>How does it work?</h2>
 					</header>
+					<div class="flex flex-2">
+						<article>
+						<p> We have developped a program in C++ using openFrameworks that communicates with Ableton and the Leapmotion* and that displays shapes whith colors, movements and effects and broadcasts music. <p>
+
+						<p><span class="white">Step 1 - SETUP and SLEEP MODE</span></br>
+						The basic shapes and music of each sequence, that we call 'state of mind', are loaded. Shapes and their colors are gathered via SVGs and music via MIDI. For each state of mind, we have defined specific actions and their results, as well as physics for the movements. Once everything is setup, we project the visual and broacast the sound. When there are no actions from the user, our installation is in sleep mode. </p>
+
+						<p><span class="white">Step 2 - INTERCTIONS</span><br>
+						When a user places his hands over the leapmotion, it wakes our installation up. Each gesture is mapped with a specific reaction, both on the shapes (colors, movement, ...) and on music (filters, note or noise addition, ...). Therefore, when a gesture is detected, their is a direct response! </p>
+
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="./images/sketch.svg">
+							</div>
+						</article> 
+					</div>
 			</div>
 
 		</section>
@@ -111,7 +130,7 @@
 									<h3>Leap Motion</h3>
 								</a>								
 							</header>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
+							<p>The Leap Motion controller is a small USB peripheral device which is designed to be placed on a physical desktop, facing upward, and which detects hand and fingers movements.</p>
 						</article>
 						<article>
 							<div class="image fit">
@@ -121,11 +140,11 @@
 							</div>
 							<header>
 							<a href="http://openframeworks.cc/">
-									<h3>OpenFrameworks</h3>
+									<h3>openFrameworks</h3>
 								</a>
 								
 							</header>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
+							<p> openFrameworks is an open source toolkit designed for "creative coding". It is written in C++ and built on top of OpenGL.</p>
 						</article>
 						<article>
 							<div class="image fit">
@@ -139,7 +158,7 @@
 									</a>
 								
 							</header>
-							<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
+							<p>Ableton Live is a software music sequencer and digital audio workstation for macOS and Windows. </p>
 						</article>
 					</div>
 			</section>
@@ -162,7 +181,7 @@
 							<div class="image round">
 								<img src="images/pic04.jpg" alt="Person 2" />
 							</div>
-							<h3>Julie Puëch</h3>
+							<h3>Julie Puech</h3>
 							<p>Vestibulum comm</p>
 						</div>
 						<div class="box person">
