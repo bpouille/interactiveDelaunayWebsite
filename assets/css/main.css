@@ -1665,7 +1665,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #f94262;
+		color: #045FB4;
 		font-weight: 300;
 		
 		line-height: 1.5;
@@ -1835,7 +1835,8 @@
 			background: -webkit-linear-gradient(left, #0f3051 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
 			background: linear-gradient(to right, #0f3051 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			color: #bacee6;
-			background: linear-gradient(145deg , #fb4262 0%,#552c72 100%)
+			/*background: linear-gradient(145deg , #fb4262 0%,#552c72 100%)*/
+			background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 		}
 
 			section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
@@ -2577,7 +2578,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #f94262;
+		background-color: #045FB4;
 		border-radius: 0;
 		border: 0;
 		color: #ffffff !important;
@@ -2690,7 +2691,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #f94262;
+			background-color: #045FB4;
 			color: #ffffff !important;
 			width: 100%;
 		}
